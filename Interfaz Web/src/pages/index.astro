@@ -1,0 +1,16 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import CompileAndTextArea from '../components/CompileAndTextArea.jsx';
+---
+
+<Layout title="Welcome to Astro">
+	<main class="flex items-center justify-center h-screen bg-stone-950">
+		
+		<div>
+			<h1 class="text-3xl text-white justify-center ">
+				<CompileAndTextArea client:visible/>
+			</h1>
+		</div>
+	</main>
+</Layout>
